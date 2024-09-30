@@ -1,15 +1,65 @@
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(37, 35, 35);
+    font-family: Arial, sans-serif;
+}
+
+.bas h1 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.container {
+    border: 1px solid #7161ef;
+    margin: 20px auto; /* Центрирование контейнера */
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 90%; /* Ограничение ширины контейнера */
+}
+
+.header {
+    background-color: #7161ef;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+}
+.content p {
+    color: white;
+}
+.content {
+    padding: 0 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.content.open {
+    max-height: 500px; /* Высота, которая должна быть достаточной для отображения всего текста */
+    transition: max-height 0.5s ease-in;
+}
+
 footer {
-    background-color: rgb(60, 60, 60); /* Цвет фона */
+    background-color: rgb(37, 35, 35); /* Цвет фона */
     color: rgb(211, 209, 209); /* Цвет текста */
     text-align: center; /* Выравнивание текста по центру */
     padding: 20px; /* Внутренние отступы */
-    position: absolute; /* Позиционирование */
-    bottom: 0; /* Прикрепление к низу */
     width: 100%; /* Ширина 100% */
     text-decoration: none;
-
-}
-.the_basics {
-    text-align: center;
+    position: relative; /* Изменение позиции */
+    bottom: 0; /* Прикрепление к низу */
 }
