@@ -80,7 +80,7 @@ h3 {
 }
 
 .container_1, .container_2, .container_3, .container_4 {
-    border: 1px solid #7161ef;
+    border: 1px solid hsl(247, 82%, 66%);
     border-radius: 5px;
     overflow: hidden;
     width: 100%; /* Устанавливаем ширину для контейнеров с вопросами */
@@ -126,9 +126,41 @@ footer {
     background-color: rgb(37, 35, 35); /* Цвет фона */
     color: rgb(211, 209, 209); /* Цвет текста */
     text-align: center; /* Выравнивание текста по центру */
-    padding: 20px; /* Внутренние отступы */
+    padding: 10px; /* Внутренние отступы */
     width: 100%; /* Ширина 100% */
     text-decoration: none;
-    position: absolute; /* Изменение позиции */
+    position:relative; /* Изменение позиции */
     bottom: 0; /* Прикрепление к низу */
+    flex-shrink: 0;
+}
+h4 { 
+    color: white;
+}
+.example {
+    margin-top: 10px;
+    padding: 4px;
+    color: white;
+    background-color: #7161ef;
+    border: 3px solid hsl(247, 82%, 66%);
+    border-radius: 5px;
+    display: inline-block;
+}
+#p1
+{
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+#header_head {
+    margin-top: 10px;
+    padding: 4px;
+    color: white;
+    border: 3px solid hsl(247, 82%, 66%);
+    background-color: #7161ef;
+    border-radius: 5px;
+    display: inline-block;
+}
+code
+{
+    font-size: 15px;
 }
